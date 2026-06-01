@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CARNES A&P</title>
-  css/styles.css
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -16,9 +16,11 @@
     </div>
 
     <nav class="nav">
-      #inicioInicio</a>
-      #productosProductos</a>
-      #contactoContacto</a>
+
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+
     </nav>
 
     <button class="cart-btn" id="cartBtn">
@@ -33,7 +35,7 @@
         <p>
           Encuentra carne de res, cerdo, pollo y cortes especiales con excelente calidad.
         </p>
-        #productosVer productos</a>
+        <a href="#productos" class="btn-primary">Ver productos</a>
       </div>
     </section>
 
@@ -42,7 +44,7 @@
       <div class="products-grid" id="productsGrid">
 
         <article class="product-card">
-          img/res.jpg
+          <img src="img/RES.JPG" alt="Carne de Res">
           <h3>Carne de Res</h3>
           <p class="description">Corte fresco ideal para asados y preparaciones especiales.</p>
           <p class="price">$20.000</p>
@@ -50,7 +52,7 @@
         </article>
 
         <article class="product-card">
-          img/cerdo.jpg
+          <img src="img/CERDO.JPG" alt="Carne de Cerdo">
           <h3>Carne de Cerdo</h3>
           <p class="description">Carne seleccionada de excelente textura y sabor.</p>
           <p class="price">$18.000</p>
@@ -58,7 +60,7 @@
         </article>
 
         <article class="product-card">
-          img/pollo.jpg
+          <img src="img/POLLO" alt="POLLO">
           <h3>Pollo</h3>
           <p class="description">Producto fresco para comidas rápidas y saludables.</p>
           <p class="price">$15.000</p>
@@ -66,7 +68,7 @@
         </article>
 
         <article class="product-card">
-          img/chorizo.jpg
+          <img src="img/CHORIZO.JPG" alt="CARNES FRIAS">
           <h3>Chorizo Artesanal</h3>
           <p class="description">Acompañamiento ideal para parrillas y eventos.</p>
           <p class="price">$12.000</p>
@@ -104,6 +106,6 @@
 
   <div class="overlay" id="overlay"></div>
 
-  js/app.jsscript>
+  <script src="js/app.js"></script>
 </body>
 </html>

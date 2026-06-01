@@ -1,111 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CARNES A&P</title>
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-  <header class="header">
-    <div class="logo">
-      <h1>CARNES A&P</h1>
-      <p>Calidad y frescura para tu hogar</p>
+<header class="header">
+  <h1>CARNES A&P</h1>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
+</header>
+
+<section id="inicio">
+  <h2>Las mejores carnes</h2>
+  <a href="#productos">Ver productos</a>
+</section>
+
+<section id="productos">
+
+  <h2>Productos</h2>
+
+  <div>
+
+    <div>
+      <img src="img/res.jpg">
+      <h3>Carne de Res</h3>
+      <p>$20.000</p>
+      <button onclick="agregarAlCarrito('Res', 20000)">Agregar</button>
     </div>
 
-    <nav class="nav">
-
-      <a href="#inicio">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#contacto">Contacto</a>
-
-    </nav>
-
-    <button class="cart-btn" id="cartBtn">
-      🛒 Carrito <span id="cartCount">0</span>
-    </button>
-  </header>
-
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-content">
-        <h2>Las mejores carnes al mejor precio</h2>
-        <p>
-          Encuentra carne de res, cerdo, pollo y cortes especiales con excelente calidad.
-        </p>
-        <a href="#productos" class="btn-primary">Ver productos</a>
-      </div>
-    </section>
-
-    <section class="products-section" id="productos">
-      <h2>Nuestros productos</h2>
-      <div class="products-grid" id="productsGrid">
-
-        <article class="product-card">
-          <img src="img/RES.JPG" alt="Carne de Res">
-          <h3>Carne de Res</h3>
-          <p class="description">Corte fresco ideal para asados y preparaciones especiales.</p>
-          <p class="price">$20.000</p>
-          <button onclick="agregarAlCarrito('Carne de Res', 20000)">Agregar al carrito</button>
-        </article>
-
-        <article class="product-card">
-          <img src="img/CERDO.JPG" alt="Carne de Cerdo">
-          <h3>Carne de Cerdo</h3>
-          <p class="description">Carne seleccionada de excelente textura y sabor.</p>
-          <p class="price">$18.000</p>
-          <button onclick="agregarAlCarrito('Carne de Cerdo', 18000)">Agregar al carrito</button>
-        </article>
-
-        <article class="product-card">
-          <img src="img/POLLO" alt="POLLO">
-          <h3>Pollo</h3>
-          <p class="description">Producto fresco para comidas rápidas y saludables.</p>
-          <p class="price">$15.000</p>
-          <button onclick="agregarAlCarrito('Pollo', 15000)">Agregar al carrito</button>
-        </article>
-
-        <article class="product-card">
-          <img src="img/CHORIZO.JPG" alt="CARNES FRIAS">
-          <h3>Chorizo Artesanal</h3>
-          <p class="description">Acompañamiento ideal para parrillas y eventos.</p>
-          <p class="price">$12.000</p>
-          <button onclick="agregarAlCarrito('Chorizo Artesanal', 12000)">Agregar al carrito</button>
-        </article>
-
-      </div>
-    </section>
-
-    <section class="info-section" id="contacto">
-      <h2>Contacto</h2>
-      <p>Dirección: Medellín, Antioquia</p>
-      <p>Teléfono: 300 000 0000</p>
-      <p>Email: contacto@carnesayp.com</p>
-    </section>
-  </main>
-
-  <!-- Panel lateral del carrito -->
-  <aside class="cart-panel" id="cartPanel">
-    <div class="cart-header">
-      <h2>Mi carrito</h2>
-      <button class="close-cart" id="closeCart">✖</button>
+    <div>
+      <img src="img/cerdo.jpg">
+      <h3>Carne de Cerdo</h3>
+      <p>$18.000</p>
+      <button onclick="agregarAlCarrito('Cerdo', 18000)">Agregar</button>
     </div>
 
-    <div class="cart-items" id="cartItems">
-      <p class="empty-cart">Tu carrito está vacío.</p>
+    <div>
+      <img src="img/pollo.jpg">
+      <h3>Pollo</h3>
+      <p>$15.000</p>
+      <button onclick="agregarAlCarrito('Pollo', 15000)">Agregar</button>
     </div>
 
-    <div class="cart-footer">
-      <h3>Total: <span id="cartTotal">$0</span></h3>
-      <button class="clear-btn" onclick="vaciarCarrito()">Vaciar carrito</button>
-      <button class="buy-btn" onclick="finalizarCompra()">Finalizar compra</button>
-    </div>
-  </aside>
+  </div>
 
-  <div class="overlay" id="overlay"></div>
+</section>
 
-  <script src="js/app.js"></script>
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Medellín</p>
+</section>
+
+<script src="js/app.js"></script>
+
 </body>
 </html>
